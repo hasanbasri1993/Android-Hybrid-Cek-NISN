@@ -103,7 +103,7 @@ myApp.onPageInit('ibacor', function (page) {
     });
     $$('#cari-nama').on('click', function () {
 		$$.ajax({
-               url: 'http://ibacor.com/api/data-siswa?nama='+$$('#nama').val()+'&tempat='+$$('#tempat').val()+'&lahir='+$$('#lahir').val(),
+               url: 'http://ibacor.com/api/data-siswa?k=281b051825fa57b650921ecfec1c57fd&nama='+$$('#nama').val()+'&tempat='+$$('#tempat').val()+'&lahir='+$$('#lahir').val(),
                dataType: 'json',
                success: function (data) {
 					if(data.status=='error'){
