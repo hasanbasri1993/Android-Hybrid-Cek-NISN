@@ -34,7 +34,7 @@ $$(document).on('ajaxComplete', function (e) {
 myApp.onPageInit('ibacor', function (page) {
     $$('#cari-nisn').on('click', function () {
 		$$.ajax({
-               url: 'http://ibacor.com/api/data-siswa?nisn='+$$('#nisn').val(),
+               url: 'http://ibacor.com/api/data-siswa?k=281b051825fa57b650921ecfec1c57fd&nisn='+$$('#nisn').val(),
                dataType: 'json',
                success: function (data) {
 					if(data.status=='error'){
